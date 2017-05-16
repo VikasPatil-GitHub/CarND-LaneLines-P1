@@ -8,10 +8,10 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/solidWhiteCurve.jpg "White"
+[image2]: ./test_images_output/solidYellowCurve.jpg "Yellow"
 
 ---
 
@@ -28,6 +28,10 @@ My pipeline consisted of 5 steps.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by separating the left lines and right lines by calculating the slope of the lines slope_filter(). A simple linear regression was performed on both right and left lines to get the average line slopes and intercepts. Using these paremeters the bottom most and top most line points were calculated which were then used to draw the final lines on the original image. 
 
+Below are the some of the images after complete processing:
+
+![white][image1]
+![yellow][image2]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
