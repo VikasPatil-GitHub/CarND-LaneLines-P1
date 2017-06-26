@@ -1,7 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
 **Finding Lane Lines on the Road**
 
 The goals / steps of this project are the following:
@@ -16,8 +14,6 @@ The goals / steps of this project are the following:
 ---
 
 ### Reflection
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps.
 1. Convert the image into a grayscale image
@@ -34,12 +30,12 @@ Below are the some of the images after complete processing:
 ![yellow][image2]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings
 
 
 One potential shortcoming would be what would happen when if the line lines went missing for some of the time in the test videos.
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improvements to the pipeline
 
 A possible improvement would be to improve the region_of_interest() function by changing the vertices of the polygon so as to decrease the area of the polygon for the challenge.mp4 to work.
